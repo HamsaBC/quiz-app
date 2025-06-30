@@ -74,7 +74,8 @@ const AddQuestionForm: React.FC<AddQuestionFormProps> = ({ onClose }) => {
 
   return (
     <div className="max-w-full mx-auto mt-8 p-6 bg-white shadow rounded">
-      <h2 className="text-xl font-bold mb-4">➕ Add Questions</h2>
+     <h2 className="text-xl font-bold mb-4 text-black">➕Add Questions</h2>
+
       {showSuccess && (
         <div className="mb-4 text-green-700 bg-green-100 border border-green-300 rounded p-3">
           ✅ Questions added successfully!
@@ -119,7 +120,7 @@ const AddQuestionForm: React.FC<AddQuestionFormProps> = ({ onClose }) => {
                   {errors.questions?.[index]?.correctAnswer && <p className="text-red-500 text-sm">{errors.questions[index]?.correctAnswer?.message}</p>}
                 </td>
                 <td className="border p-2 text-center">
-                  <button type="button" onClick={() => remove(index)} className="bg-red-500 text-white px-2 py-1 rounded">❌</button>
+                  <button type="button" onClick={() => remove(index)} className="bg-red-500 text-black px-2 py-1 rounded">❌</button>
                 </td>
               </tr>
             ))}
@@ -127,8 +128,8 @@ const AddQuestionForm: React.FC<AddQuestionFormProps> = ({ onClose }) => {
         </table>
 
         <div className="flex justify-between mt-4">
-          <button type="button" onClick={() => append({ question: '', options: ['', '', '', ''], correctAnswer: '' })} className="bg-blue-500 text-white px-4 py-2 rounded">➕ Add New Row</button>
-          <button type="submit" className="bg-green-600 text-white px-4 py-2 rounded">✅ Submit All</button>
+          <button type="button" onClick={() => append({ question: '', options: ['', '', '', ''], correctAnswer: '' })} className="bg-blue-500 text-black px-4 py-2 rounded">➕ Add Questions</button>
+          <button type="submit" className="bg-green-600 text-black px-4 py-2 rounded">✅ Submit All</button>
         </div>
       </form>
     </div>

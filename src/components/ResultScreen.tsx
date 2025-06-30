@@ -53,7 +53,7 @@ const ResultScreen: React.FC = () => {
       <div className="mt-6 text-center">
         <button
           onClick={handleRestart}
-          className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded"
+          className="bg-blue-600 hover:bg-blue-700 text-black px-6 py-2 rounded"
         >
           🔄 Restart Quiz
         </button>

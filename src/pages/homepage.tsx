@@ -16,7 +16,7 @@ const HomePage: React.FC = () => {
       <div className="flex justify-center gap-4">
         <button
           onClick={handleStart}
-          className="bg-blue-600 text-white py-2 px-6 rounded hover:bg-blue-700 transition"
+          className="bg-blue-600 text-black py-2 px-6 rounded hover:bg-blue-700 transition"
         >
           ▶️ Start Quiz
         </button>
